@@ -24,7 +24,7 @@
   /* fonts */
   --body-font-family: 'Lato', sans-serif;
   --heading-font-family: var(--body-font-family);
-  --fixed-font-family: ''Lato', sans-serif;
+  --fixed-font-family: 'Lato', sans-serif;
 
   /* body sizes */
   --body-font-size-m: 22px;
@@ -46,8 +46,8 @@
 
 @media (min-width: 900px) {
   :root {
-    --heading-font-size-xxl: 60px;
-    --heading-font-size-xl: 48px;
+    --heading-font-size-xxl: 40px;
+    --heading-font-size-xl: 22px;
     --heading-font-size-l: 36px;
     --heading-font-size-m: 30px;
     --heading-font-size-s: 24px;
@@ -62,7 +62,6 @@
 }
 
 body {
-  font-size: var(--body-font-size-m);
   margin: 0;
   font-family: 'Lato', sans-serif;
   color: #333;
@@ -82,7 +81,7 @@ header {
 h1, h2, h3,
 h4, h5, h6 {
   font-family: var(--heading-font-family);
-  font-weight: 600;
+  font-weight: 300;
   line-height: 1.25;
   margin-top: 1em;
   margin-bottom: .5em;
@@ -134,11 +133,6 @@ a:any-link {
   text-decoration: none;
 }
 
-a:hover {
-  text-decoration: underline;
-  color: var(--link-hover-color);
-}
-
 /* buttons */
 a.button:any-link, button {
   font-family: var(--body-font-family);
@@ -176,24 +170,6 @@ a.button.secondary, button.secondary {
   color: var(--text-color)
 }
 
-main input {
-  font-size: 1.25rem;
-  width: 100%;
-  max-width: 50rem;
-  display: block;
-  margin-bottom: 1rem;
-  padding: 0.75rem 0.6rem;
-  border-radius: 0.25rem;
-  box-sizing: border-box;
-  border: 1px solid var(--text-color);
-  color: var(--text-color);
-  background-color: var(--background-color);
-}
-
-main input:hover {
-  border: 1px solid var(--text-color);
-}
-
 main blockquote {
   font-style: italic;
   margin: 3rem;
@@ -226,23 +202,6 @@ main img {
 .icon svg {
   height: 100%;
   width: 100%;
-}
-
-main .section {
-  padding: 64px 16px;
-}
-
-@media (min-width: 600px) {
-  main .section {
-    padding: 64px 32px;
-  }
-}
-
-@media (min-width: 900px) {
-  .section > div {
-    max-width: 1200px;
-    margin: auto;
-  }
 }
 
 /* section metadata */
