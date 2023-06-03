@@ -195,8 +195,10 @@ main img {
 
 .icon {
   display: inline-block;
-  height: 24px;
-  width: 24px;
+  height: 60px;
+  width: 60px;
+  font-size: 3em;
+  font-weight: 900;
 }
 
 .icon svg {
@@ -207,4 +209,31 @@ main img {
 /* section metadata */
 main .section.highlight {
   background-color: var(--highlight-background-color);
+}
+
+.stats {
+  max-width: 1100px;
+  margin: 0 auto;
+  overflow: auto;
+  padding: 0 40px;
+}
+
+.stats h3 {
+  font-size: 18.72px;
+  max-width: 500px;
+  margin: auto;
+  text-align: center;
+}
+
+.stats .columns > div > div p:first-child,
+.stats .columns > div > div p:nth-child(2) {
+  text-align: center;
+  margin: 0 !important;
+  font-size: 35px;
+}
+
+.stats .columns p {
+  text-align: center;
+  font-size: 20px;
+  font-weight: bold;
 }
