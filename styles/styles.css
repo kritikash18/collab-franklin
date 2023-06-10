@@ -136,26 +136,17 @@ a:any-link {
 /* buttons */
 a.button:any-link, button {
   font-family: var(--body-font-family);
+  background-color: #002240;
   display: inline-block;
-  box-sizing: border-box;
-  text-decoration: none;
-  border: 2px solid transparent;
-  padding: 5px 30px;
-  text-align: center;
-  font-style: normal;
-  font-weight: 600;
+  padding: 10px 30px;
   cursor: pointer;
-  color: var(--background-color);
-  background-color: var(--link-color);
-  margin: 16px 0;
-  white-space: nowrap;
-  overflow: hidden;
-  text-overflow: ellipsis;
-  border-radius: 30px;
+  color: #fff;
+  border: none;
+  border-radius: 5px;
 }
 
 a.button:hover, a.button:focus, button:hover, button:focus  {
-  background-color: var(--link-hover-color);
+  transform: scale(0.95);
   cursor: pointer;
 }
 
@@ -216,6 +207,7 @@ main .section.highlight {
   margin: 0 auto;
   overflow: auto;
   padding: 0 40px;
+  background-color: #fff;
 }
 
 .stats h3 {
@@ -236,4 +228,81 @@ main .section.highlight {
   text-align: center;
   font-size: 20px;
   font-weight: bold;
+}
+
+.cli > div {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  grid-template-rows: repeat(2, 1fr);
+  gap: 20px;
+  justify-content: center;
+  align-items: center;
+  height: 100%;
+  max-width: 1100px;
+  margin: 0 auto;
+  overflow: auto;
+  padding: 0 40px;
+}
+
+.cli > div > *:first-child {
+  max-width: 80%;
+  max-height: 80%;
+  grid-column: 1 / span 2;
+  grid-row: 1 / span 2;
+}
+
+.cli > div > *:nth-child(2),
+.cli > div > *:nth-child(3) {
+  background-color: #fff;
+  border-radius: 10px;
+  box-shadow: 0 3px 10px rgba(0, 0, 0, 0.2);
+  padding: 20px;
+  margin: 10px 0;
+  color: #333;
+  font-size: 18.72px;
+  font-weight: bold;
+}
+
+.cloud {
+  background-color: #047aed;
+}
+
+.cloud > div {
+  display: grid;
+  grid-template-columns: 4fr 3fr;
+  grid-template-rows: 1fr 1fr 1fr 1fr;
+  justify-content: center;
+  align-items: center;
+  height: 100%;
+  max-width: 1100px;
+  margin: 0 auto;
+  padding: 0 40px;
+  overflow: auto;
+  background-color: #047aed;
+  color: #fff;
+}
+
+.cloud > div > *:first-child {
+  align-self: end;
+  justify-self: center;
+  font-size: 3rem;
+  grid-area: 1 / 1 / span 2 / span 1;
+}
+
+.cloud > div > *:nth-child(2) {
+  grid-area: 3 / 1;
+  align-self: start;
+  justify-self: center;
+  font-size: 20px;
+}
+
+.cloud > div > *:nth-child(3) {
+  grid-area: 4 / 1;
+  align-self: center;
+  justify-self: center;
+  height: 100%;
+}
+
+.cloud > div > *:last-child {
+  grid-row-end: span 4;
 }
