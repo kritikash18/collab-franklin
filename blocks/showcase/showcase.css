@@ -52,6 +52,11 @@
   padding: 40px;
   z-index: 100;
   justify-self: flex-end;
+  animation: slideInFromRight 1s ease-in;
+}
+
+.showcase-text {
+  animation: slideInFromLeft 1s ease-in;
 }
 
 .showcase-form input[type='text'],

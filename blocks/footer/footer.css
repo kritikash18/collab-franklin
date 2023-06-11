@@ -1,14 +1,42 @@
 footer {
-  padding: 2rem;
-  background-color: var(--overlay-background-color);
-  font-size: var(--body-font-size-s);
+  padding: 4rem;
+  background-color: #002240;
+  color: #fff;
 }
 
 footer .footer {
-  max-width: 1200px;
-  margin: auto;
+  max-width: 1100px;
+  margin: 0 auto;
+  overflow: auto;
+  padding: 0 40px;
 }
 
 footer .footer p {
   margin: 0;
+}
+
+footer .icon svg {
+  fill: white;
+  width: 50%;
+  height: 50%;
+}
+
+#loruki {
+  margin: 0;
+}
+
+.icon-github svg:hover {
+  fill: #000000;
+}
+
+.icon-facebook svg:hover {
+  fill: #1773EA;
+}
+
+.icon-instagram svg:hover {
+  fill: #B32E87;
+}
+
+.icon-twitter svg:hover {
+  fill: #1C9CEA;
 }
