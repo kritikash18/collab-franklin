@@ -306,3 +306,8 @@ main .section.highlight {
 .cloud > div > *:last-child {
   grid-row-end: span 4;
 }
+
+#supported-languages {
+  text-align: center;
+  font-size: 2rem;
+}
